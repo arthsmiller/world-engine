@@ -4,7 +4,8 @@ services:
   psql:
     build:
       dockerfile: Dockerfile
-    volumes: osm:/usr/world-engine
+    volumes: 
+      - osm:/usr/world-engine
   
 volumes:
   osm:
